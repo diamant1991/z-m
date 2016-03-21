@@ -1,6 +1,9 @@
 .bold {
   font-weight: bold;
 }
+.proxima {
+  font-family: 'ProximaNovaBold';
+}
 body {
   font-family: 'Open Sans', sans-serif;
   font-size: 15px;
@@ -145,6 +148,12 @@ body {
 .equipment__name {
   line-height: 1.5;
 }
+.equipment__name span {
+  color: #ff044a;
+}
+.equipment-list {
+  margin-bottom: 40px;
+}
 .timer {
   color: #fff;
   margin-top: 35px;
@@ -184,4 +193,153 @@ body {
   font-size: 20px;
   line-height: 58px;
   width: 215px;
+}
+.equipment__info {
+  font-size: 13px;
+  color: #595656;
+}
+.equipment__info span {
+  font-family: 'ProximaNovaBold';
+  font-size: 60px;
+  color: #ff044a;
+  position: relative;
+  top: 12px;
+  margin-right: 10px;
+}
+.rates {
+  height: 920px;
+  padding-top: 90px;
+  background: #0e142d url(../images/rates.jpg) no-repeat 50%;
+}
+.item__title {
+  font-size: 30px;
+  color: #fff;
+  font-family: 'ProximaNovaBold';
+  text-align: center;
+  margin-bottom: 40px;
+}
+.item__title.black {
+  color: #000;
+}
+.rates__item {
+  border: 2px solid #fff;
+  text-align: center;
+  -webkit-border-radius: 12px;
+  border-radius: 12px;
+  margin-top: 20px;
+}
+.rates__item.large {
+  margin-top: 0;
+  border-color: #ff044a;
+}
+.rates__item.large .rates__content {
+  padding-bottom: 35px;
+  padding-top: 25px;
+}
+.rates__name {
+  background: url(../images/rates-name.png) no-repeat;
+  height: 111px;
+  font-size: 24px;
+  color: #000;
+  font-family: 'ProximaNovaBold';
+  -webkit-border-radius: 7px 7px 0 0;
+  border-radius: 7px 7px 0 0;
+}
+.rates__name.large {
+  background: url(../images/rates-name-red.png) no-repeat;
+  height: 121px;
+  color: #fff;
+}
+.rates__name.large p {
+  font-family: 'Open Sans', sans-serif;
+  font-size: 15px;
+  margin-bottom: 15px;
+}
+.rates__content {
+  color: #fff;
+  padding: 15px 0;
+}
+.rates-wrapp {
+  padding-left: 195px;
+  padding-right: 110px;
+  position: relative;
+}
+.rates__list li {
+  height: 40px;
+}
+.rates__list li.large {
+  height: 65px;
+  line-height: 1.3;
+}
+.rates__price {
+  font-family: 'ProximaNovaBold';
+  font-size: 24px;
+  height: 50px;
+}
+.rates__send {
+  padding-left: 15px;
+  padding-right: 15px;
+}
+.rates__send .green__link {
+  height: 55px;
+  line-height: 55px;
+  font-size: 24px;
+}
+.green__link {
+  background: #21d513;
+  color: #fff;
+  font-family: 'ProximaNovaBold';
+  display: block;
+  -webkit-border-radius: 6px;
+  border-radius: 6px;
+}
+.rates__text {
+  position: absolute;
+  z-index: 2;
+  width: 195px;
+  left: 0;
+  top: 0;
+  padding-right: 20px;
+  text-align: right;
+  font-size: 13px;
+  color: #c3bcbc;
+  padding-top: 149px;
+}
+.rates__text li {
+  height: 40px;
+}
+.rates__text li.large {
+  height: 65px;
+}
+.objects {
+  padding-top: 75px;
+  padding-bottom: 110px;
+}
+.object__img {
+  height: 200px;
+  margin-bottom: 30px;
+}
+.object__item {
+  text-align: center;
+  padding: 0 60px;
+}
+.object__name {
+  font-size: 20px;
+  font-family: 'ProximaNovaBold';
+  margin-bottom: 10px;
+}
+.object__desc {
+  line-height: 1.5;
+}
+.object__desc p {
+  margin-bottom: 20px;
+}
+.object__desc .green__link {
+  height: 30px;
+  line-height: 30px;
+  font-size: 14px;
+  margin: auto;
+  width: 130px;
+  -webkit-border-radius: 5px;
+  border-radius: 5px;
 }

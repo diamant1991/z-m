@@ -6,15 +6,17 @@
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 	<meta name="keywords" content="" >
 	<meta name="description" content="">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<link href='https://fonts.googleapis.com/css?family=Open+Sans:400,700,700italic,400italic' rel='stylesheet' type='text/css'>
 	<link rel="stylesheet" href="css/vendor.css">
 	<link rel="stylesheet" href="css/main.css">
+	<link rel="stylesheet" href="css/media.css">
 	<!--[if lt IE 9]>
 		<script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>a
 	<![endif]-->
 </head>
 <body>
-	<nav class="nav">
+	<nav class="nav hidden-sm">
 		<div class="container">
 			<div class="row">
 				<ul class="nav-menu">
@@ -33,6 +35,9 @@
 	</nav>
 
 	<div class="top-slider parallax">
+		<a href="#equipment" class="scroll-btn hidden-sm">
+			<img src="images/scroll-btn.png" alt="">
+		</a>
 		<div class="container">
 			<div class="row">
 				<div class="top-slider-wrapp">
@@ -55,7 +60,7 @@
 								</div>
 							</div>
 							<div class="get-call-block">
-								<a href="#" class="get-call__link">Перезвоните мне</a>
+								<a href="#" class="get-call__link" data-toggle="modal" data-target="#get-call">Перезвоните мне</a>
 							</div>
 						</div>
 					</div>
@@ -70,35 +75,12 @@
 								</div>
 							</div>
 							<div class="timer">
-								<div class="timer__title">До конца акции осталось</div>
 								<div class="timer-wrapp clearfix">
-									<div class="timer-block">
-										<div class="timer__number">
-											00
-										</div>
-										<div class="timer__text">
-											дней
-										</div>
-									</div>
-									<div class="timer-block">
-										<div class="timer__number">
-											00
-										</div>
-										<div class="timer__text">
-											дней
-										</div>
-									</div>
-									<div class="timer-block">
-										<div class="timer__number">
-											00
-										</div>
-										<div class="timer__text">
-											дней
-										</div>
-									</div>
+									<div class="timer__title">До конца акции осталось</div>
+									<div class="countdown"></div>
 								</div>
 								<div class="get-call-block">
-									<a href="#" class="get-call__link call-now">Заказать сейчас</a>
+									<a href="#" class="get-call__link call-now" data-toggle="modal" data-target="#install">Заказать сейчас</a>
 								</div>
 							</div>
 						</div>
@@ -436,7 +418,7 @@
 									Продуктовый магазин
 								</div>
 								<p>Одноэтажный розничный продуктовый магазин площадью в 450 м2</p>
-								<a href="#" class="green__link">Подробнее</a>
+								<a href="#" class="green__link" data-toggle="modal" data-target="#modal-object">Подробнее</a>
 							</div>
 						</div>
 					</div>
@@ -454,7 +436,7 @@
 									Котедж
 								</div>
 								<p>Огороженная территория,с двухэтажным зданием площадью в 240 м2, гаражна два места с навесом, а также дополнительные помещения.</p>
-								<a href="#" class="green__link">Подробнее</a>
+								<a href="#" class="green__link" data-toggle="modal" data-target="#modal-object">Подробнее</a>
 							</div>
 						</div>
 					</div>
@@ -472,7 +454,7 @@
 									Подьезд
 								</div>
 								<p>Типовой объект «Подъезд» представляет из себя подъезд жилого дома с двумя лифтами.</p>
-								<a href="#" class="green__link">Подробнее</a>
+								<a href="#" class="green__link" data-toggle="modal" data-target="#modal-object">Подробнее</a>
 							</div>
 						</div>
 					</div>
@@ -490,7 +472,7 @@
 									Продуктовый магазин
 								</div>
 								<p>Одноэтажный розничный продуктовый магазин площадью в 450 м2</p>
-								<a href="#" class="green__link">Подробнее</a>
+								<a href="#" class="green__link" data-toggle="modal" data-target="#modal-object">Подробнее</a>
 							</div>
 						</div>
 					</div>
@@ -508,7 +490,7 @@
 									Котедж
 								</div>
 								<p>Огороженная территория,с двухэтажным зданием площадью в 240 м2, гаражна два места с навесом, а также дополнительные помещения.</p>
-								<a href="#" class="green__link">Подробнее</a>
+								<a href="#" class="green__link" data-toggle="modal" data-target="#modal-object">Подробнее</a>
 							</div>
 						</div>
 					</div>
@@ -526,7 +508,7 @@
 									Подьезд
 								</div>
 								<p>Типовой объект «Подъезд» представляет из себя подъезд жилого дома с двумя лифтами.</p>
-								<a href="#" class="green__link">Подробнее</a>
+								<a href="#" class="green__link" data-toggle="modal" data-target="#modal-object">Подробнее</a>
 							</div>
 						</div>
 					</div>
@@ -1171,35 +1153,12 @@
 						<div class="timer__item">
 							<div class="timer__title">До конца акции осталось</div>
 							<div class="timer-wrapp clearfix">
-								<div class="timer-block">
-									<div class="timer__number">
-										00
-									</div>
-									<div class="timer__text">
-										дней
-									</div>
-								</div>
-								<div class="timer-block">
-									<div class="timer__number">
-										00
-									</div>
-									<div class="timer__text">
-										дней
-									</div>
-								</div>
-								<div class="timer-block">
-									<div class="timer__number">
-										00
-									</div>
-									<div class="timer__text">
-										дней
-									</div>
-								</div>
+								<div class="countdown2"></div>
 							</div>
 						</div>
 						<div class="get-call__item">
 							<div class="get-call-block">
-								<a href="#" class="get-call__link call-now">Заказать сейчас</a>
+								<a href="#" class="get-call__link call-now" data-toggle="modal" data-target="#install">Заказать сейчас</a>
 							</div>
 						</div>
 					</div>
@@ -1248,6 +1207,210 @@
 			</div>
 		</div>
 	</footer>
+
+
+	<!-- Modal install -->
+<div class="modal fade" id="install" tabindex="-1" role="dialog">
+  <div class="modal-dialog modal__install" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h4 class="modal-title">Заявка на установку</h4>
+      </div>
+      <div class="modal-body">
+        <form action="">
+        	<div class="modal-form__block">
+        		<p class="form__label">Вас зовут</p>
+        		<input type="text" class="modal__input">
+        	</div>
+        	<div class="modal-form__block">
+        		<p class="form__label">Телефон</p>
+        		<input type="text" class="modal__input" placeholder="+7">
+        	</div>
+        	<div class="modal-form__block">
+        		<p class="form__label">E-mail</p>
+        		<input type="text" class="modal__input">
+        	</div>
+        	<div class="modal-form__block">
+        		<input type="submit" value="Отправить заявку" class="green__link modal__submit">
+        	</div>
+        </form>
+      </div>
+    </div>
+  </div>
+</div>
+
+	<!-- Modal get-call -->
+<div class="modal fade" id="get-call" tabindex="-1" role="dialog">
+  <div class="modal-dialog modal__install" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h4 class="modal-title">Обратный звонок</h4>
+      </div>
+      <div class="modal-body">
+        <form action="">
+        	<div class="modal-form__block">
+        		<p class="form__label">Вас зовут</p>
+        		<input type="text" class="modal__input">
+        	</div>
+        	<div class="modal-form__block">
+        		<p class="form__label">Телефон</p>
+        		<input type="text" class="modal__input" placeholder="+7">
+        	</div>
+        	<div class="modal-form__block">
+        		<input type="submit" value="Заказать звонок" class="green__link modal__submit">
+        	</div>
+        </form>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- Modal thank -->
+<div class="modal fade" id="thank" tabindex="-1" role="dialog">
+  <div class="modal-dialog modal__install" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h4 class="modal-title">Спасибо</h4>
+      </div>
+      <div class="modal-body">
+        <div class="modal__text">
+        	Ваша заявка отправлена! <br>Мы перезвоним вам в ближайшее  время для уточнения всех деталей заказа.
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- Modal thank -->
+<div class="modal fade" id="modal-object" tabindex="-1" role="dialog">
+  <div class="modal-dialog modal-object-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h4 class="modal-title">Коттедж</h4>
+      </div>
+      <div class="modal-body">
+        <div class="modal__table">
+        	<table>
+        		<thead>
+        			<tr>
+        				<td>
+        					Зоны контроля
+        				</td>
+        				<td>
+        					Бюджет
+        				</td>
+        				<td>
+        					Стандарт
+        				</td>
+        				<td>
+        					Премиум
+        				</td>
+        			</tr>
+        		</thead>
+        		<tbody>
+        			<tr>
+        				<td>
+        					Главный вход в коттедж
+        				</td>
+        				<td>+</td>
+        				<td>+</td>
+        				<td>+</td>
+        			</tr>
+        			<tr>
+        				<td>
+        					Окна
+        				</td>
+        				<td>+</td>
+        				<td>+</td>
+        				<td>+</td>
+        			</tr>
+        			<tr>
+        				<td>
+        					Другие двери коттеджа
+        				</td>
+        				<td>+</td>
+        				<td>+</td>
+        				<td>+</td>
+        			</tr>
+        			<tr>
+        				<td>
+        					Забор
+        				</td>
+        				<td>-</td>
+        				<td>+</td>
+        				<td>+</td>
+        			</tr>
+        			<tr>
+        				<td>
+        					Ворота
+        				</td>
+        				<td>-</td>
+        				<td>+</td>
+        				<td>+</td>
+        			</tr>
+        			<tr>
+        				<td>
+        					Дополнительнфе помещения
+        				</td>
+        				<td>-</td>
+        				<td>-</td>
+        				<td>+</td>
+        			</tr>
+        			<tr>
+        				<td>
+        					Общая территория
+        				</td>
+        				<td>-</td>
+        				<td>-</td>
+        				<td>-</td>
+        			</tr>
+        			<tr>
+        				<td>
+        					Котельная
+        				</td>
+        				<td>-</td>
+        				<td>-</td>
+        				<td>-</td>
+        			</tr>
+        			<tr>
+        				<td>
+        					Коридор
+        				</td>
+        				<td>-</td>
+        				<td>-</td>
+        				<td>-</td>
+        			</tr>
+        			<tr>
+        				<td>
+        					Кухня
+        				</td>
+        				<td>-</td>
+        				<td>-</td>
+        				<td>-</td>
+        			</tr>
+        			<tr>
+        				<td>
+        					Гостинная
+        				</td>
+        				<td>-</td>
+        				<td>-</td>
+        				<td>-</td>
+        			</tr>
+        		</tbody>
+        	</table>
+        </div>
+        <form action="">
+        	<div class="object-form clearfix">
+	        	<input type="text" class="modal__input" placeholder="Имя">
+	        	<input type="text" class="modal__input" placeholder="Телефон">
+	        	<input type="submit" value="Заказать" class="green__link modal__submit">
+	        </div>
+        </form>
+      </div>
+    </div>
+  </div>
+</div>
+
 
 
 	<script src="js/vendor.min.js"></script>

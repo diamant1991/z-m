@@ -63,6 +63,7 @@ body {
   height: 690px;
   padding-top: 85px;
   overflow: hidden;
+  position: relative;
 }
 .logo__text {
   display: inline-block;
@@ -105,9 +106,10 @@ body {
   font-weight: bold;
   background: #21d513;
   text-align: center;
+  outline: 0;
 }
 .top-title {
-  width: 500px;
+  width: 450px;
   margin-top: 60px;
 }
 .top-title__item {
@@ -259,6 +261,10 @@ body {
   color: #fff;
   padding: 15px 0;
 }
+img {
+  max-width: 100%;
+  height: auto;
+}
 .rates-wrapp {
   padding-left: 195px;
   padding-right: 110px;
@@ -292,6 +298,7 @@ body {
   display: block;
   -webkit-border-radius: 6px;
   border-radius: 6px;
+  outline: 0;
 }
 .rates__text {
   position: absolute;
@@ -372,7 +379,7 @@ body {
   padding-right: 50px;
 }
 .top__text {
-  width: 500px;
+  width: 450px;
   float: left;
 }
 .camera {
@@ -856,4 +863,188 @@ span.red {
   font-size: 20px;
   line-height: 1.2;
   width: 46%;
+}
+.modal-open {
+  overflow: hidden;
+}
+.modal {
+  position: fixed;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  z-index: 1050;
+  display: none;
+  overflow: hidden;
+  -webkit-overflow-scrolling: touch;
+  outline: 0;
+}
+.modal__install {
+  width: 315px;
+  margin: 70px auto;
+}
+.modal__input {
+  display: block;
+  width: 100%;
+  height: 35px;
+  padding-left: 10px;
+  outline: 0;
+  border: 2px solid #f0f0f0;
+  -webkit-border-radius: 6px;
+  border-radius: 6px;
+}
+.modal__submit {
+  display: block;
+  width: 100%;
+  height: 55px;
+  outline: 0;
+  border: 0;
+  cursor: pointer;
+  font-family: 'ProximaNovaBold';
+  font-size: 20px;
+}
+.modal__text {
+  text-align: center;
+  line-height: 1.5;
+  font-size: 15px;
+  color: #262f2f;
+}
+.modal__table {
+  margin-bottom: 20px;
+}
+.modal__table table {
+  width: 100%;
+}
+.modal__table thead {
+  font-size: 20px;
+  color: #000;
+  font-family: 'ProximaNovaBold';
+}
+.modal__table thead td {
+  border-bottom: 2px solid #c1c4c3;
+  vertical-align: top;
+  padding-bottom: 20px;
+  text-align: center;
+}
+.modal__table thead td:first-child {
+  text-align: left;
+}
+.modal__table tbody td {
+  padding-top: 15px;
+  vertical-align: top;
+  text-align: center;
+}
+.modal__table tbody td:first-child {
+  text-align: left;
+}
+.modal-object-dialog {
+  width: 740px;
+  margin: 20px auto;
+  position: relative;
+}
+.modal-form__block {
+  margin-bottom: 25px;
+}
+.modal-form__block:last-child {
+  margin-bottom: 0;
+}
+.form__label {
+  margin-bottom: 10px;
+  font-size: 16px;
+  color: #262f2f;
+}
+.modal.fade .modal-dialog {
+  -webkit-transition: -webkit-transform 0.3s ease-out;
+  transition: -webkit-transform 0.3s ease-out;
+  -moz-transition: transform 0.3s ease-out, -moz-transform 0.3s ease-out;
+  -o-transition: transform 0.3s ease-out, -o-transform 0.3s ease-out;
+  transition: transform 0.3s ease-out;
+  transition: transform 0.3s ease-out, -webkit-transform 0.3s ease-out, -moz-transform 0.3s ease-out, -o-transform 0.3s ease-out;
+  -webkit-transform: translate(0, -25%);
+  -moz-transform: translate(0, -25%);
+  -ms-transform: translate(0, -25%);
+  -o-transform: translate(0, -25%);
+  transform: translate(0, -25%);
+}
+.modal.in .modal-dialog {
+  -webkit-transform: translate(0, 0);
+  -moz-transform: translate(0, 0);
+  -ms-transform: translate(0, 0);
+  -o-transform: translate(0, 0);
+  transform: translate(0, 0);
+}
+.modal-open .modal {
+  overflow-x: hidden;
+  overflow-y: auto;
+}
+.modal-content {
+  position: relative;
+  outline: 0;
+}
+.modal-backdrop {
+  position: fixed;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  z-index: 1040;
+  background-color: #000;
+}
+.modal-backdrop.fade {
+  filter: alpha(opacity=0);
+  opacity: 0;
+}
+.modal-backdrop.in {
+  filter: alpha(opacity=80);
+  opacity: .8;
+}
+.modal-header .close {
+  margin-top: -2px;
+}
+.modal-title {
+  margin: 0;
+  text-align: center;
+  color: #fff;
+  font-family: 'ProximaNovaBold';
+  font-size: 30px;
+  padding: 30px 0;
+}
+.modal-body {
+  position: relative;
+  background: #fff;
+  padding: 40px 25px;
+}
+.modal-footer {
+  padding: 15px;
+  text-align: right;
+  border-top: 1px solid #e5e5e5;
+}
+.modal-scrollbar-measure {
+  position: absolute;
+  top: -9999px;
+  width: 50px;
+  height: 50px;
+  overflow: scroll;
+}
+.object-form .modal__input {
+  float: left;
+  width: 250px;
+  height: 55px;
+  font-size: 15px;
+  font-family: 'Open Sans', sans-serif;
+  color: #000;
+  margin-right: 20px;
+}
+.object-form .modal__submit {
+  float: right;
+  width: 140px;
+  text-transform: uppercase;
+}
+.scroll-btn {
+  position: absolute;
+  z-index: 2;
+  display: inline-block;
+  bottom: 40px;
+  left: 50%;
+  margin-left: -12px;
 }

@@ -15,7 +15,7 @@ $(document).ready(function() {
 	    owl.trigger('owl.prev');
 	  })
 
-	  $(".nav-menu a").click(function () {
+	  $(".nav-menu a,.scroll-btn").click(function () {
 	    elementClick = $(this).attr("href")
 	    destination = $(elementClick).offset().top - 60;
 	    $("html:not(:animated),body:not(:animated)").animate({scrollTop: destination}, 800);
@@ -44,3 +44,20 @@ if (document.documentElement.clientWidth > 991) {
 
 	})();
 }
+
+jQuery(document).ready(function($){
+	$('.countdown').dsCountDown({
+		endDate: new Date("april 25, 2016 23:59:00"),
+		titleHours: 'часов', 
+		titleMinutes: 'мин', 
+		titleSeconds: 'секунд',
+		titleDays: 'дней'
+	});
+	$('.countdown2').dsCountDown({
+		endDate: new Date("april 25, 2016 23:59:00"),
+		titleHours: 'часов', 
+		titleMinutes: 'мин', 
+		titleSeconds: 'секунд',
+		titleDays: 'дней'
+	});
+})

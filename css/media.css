@@ -1,0 +1,106 @@
+@media(min-width: 1200px){
+	.rates-wrapp .col-md-4{
+		width: 32.5%;
+	}
+	.rates-wrapp .col-md-4:last-child{
+		width: 35%;
+	}
+}
+@media(max-width: 1199px){
+	.camera{
+		width: 425px;
+		margin-top: 155px;
+	}
+	.rates__name{
+		background-size: contain;
+	}
+	.rates__name.large{
+		background-size: contain;
+	}
+	.right-arrow:after,
+	.left-arrow:after{
+		right: -225px;
+	}
+	.footer__number{
+		width: 35%;
+	}
+	.consultation__men{
+		left: 0;
+		width: 370px;
+	}
+	.rates-wrapp{
+		padding-left: 165px;
+		padding-right: 0;
+	}
+	.rates__text{
+		width: 180px;
+	}
+	.object__item{
+		padding: 0 30px;
+	}
+}
+@media(min-width: 992px){
+	.visible-sm{
+		display: none !important;
+	}
+}
+@media(max-width: 991px){
+	.hidden-sm{
+		display: none !important;
+	}
+	.top-slider{
+		padding-top: 35px;
+		height: 530px;
+	}
+	.container{
+		padding-left: 30px;
+		padding-right: 30px;
+	}
+	.top-title,
+	.top__text{
+		width: 355px;
+	}
+	.top-title__item{
+		font-size: 30px;
+	}
+	.top-title__price{
+		font-size: 28px;
+	}
+	.camera{
+		margin-top: 30px;
+	}
+	.telephone__block{
+		display: block;
+		margin-bottom: 10px;
+	}
+	.get-call-block{
+		display: block;
+	}
+	.timer .get-call-block{
+		display: inline-block;
+		overflow: hidden;
+		width: 155px;
+	}
+	.get-call__link{
+		width: auto;
+	}
+	.telephone__item{
+		margin-right: 0;
+	}
+	.ds-element-days:after, 
+	.ds-element-hours:after{
+		font-size: 32px;
+	}
+	.ds-white .ds-element-value{
+		font-size: 32px;
+	}
+	.ds-white .ds-element{
+		height: 60px;
+	}
+	.top-title{
+		margin-top: 0;
+	}
+	.ds-white .ds-element-minutes{
+		padding-right: 15px;
+	}
+}

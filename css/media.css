@@ -48,6 +48,10 @@
 	.hidden-sm{
 		display: none !important;
 	}
+	.rates__name .block-vertical{
+		vertical-align: top;
+		padding-top: 10px;
+	}
 	.top-slider{
 		padding-top: 35px;
 		height: 530px;
@@ -68,6 +72,9 @@
 	}
 	.camera{
 		margin-top: 30px;
+		position: relative;
+		left: 50px;
+		width: 375px;
 	}
 	.telephone__block{
 		display: block;
@@ -102,5 +109,438 @@
 	}
 	.ds-white .ds-element-minutes{
 		padding-right: 15px;
+	}
+	.equipment__item{
+		display: inline-block;
+		vertical-align: top;
+		float: none;
+		width: 215px;
+	}
+	.rates__text{
+		width: 120px;
+	}
+	.rates-wrapp{
+		padding-left: 110px;
+	}
+	.objects-wrapp{
+		padding-left: 0;
+		padding-right: 0;
+	}
+	.slide__btn{
+		top: -30px;
+	}
+	.price__content{
+		padding-right: 0;
+		padding-left: 0;
+		width: 250px;
+		margin: auto;
+	}
+	.price{
+		height: 560px;
+		background: url(../images/price-small.jpg)no-repeat 50%;
+		background-size: cover;
+	}
+	.price__input{
+		margin-bottom: 15px;
+	}
+	.about__men{
+		right: 0;
+		bottom: -175px;
+	}
+	.about-wrapp{
+		height: auto;
+	}
+	.gift__form-content{
+		width: 250px;
+		margin: auto;
+	}
+	.gift__form-block{
+		margin-bottom: 15px;
+	}
+	.gift{
+		padding-bottom: 65px;
+	}
+	.we-work__desc{
+		padding: 0 20px;
+	}
+	.left-arrow:after{
+		width: 145px;
+		height: 17px;
+		background: url(../images/left-arrow-small.png)no-repeat;
+	}
+	.right-arrow:after{
+		width: 145px;
+		height: 17px;
+		background: url(../images/right-arrow-small.png)no-repeat;
+	}
+	.right-arrow:after, 
+	.left-arrow:after{
+		right: -153px;
+	}
+	.in-arrow:after{
+		content: none;
+	}
+	.bottom-arrow:after{
+		background: url(../images/bottom-arrow-small.png)no-repeat;
+		width: 17px;
+		height: 61px;
+		top: auto;
+		right: auto;
+		left: 50%;
+		margin-left: -8.5px;
+		bottom: -195px;
+	}
+	.we-work{
+		height: 820px;
+	}
+	.we-work__desc{
+		height: 220px;
+	}
+	.consultation{
+		height: 515px;
+	}
+	.consultation-wrapp{
+		height: 515px;
+	}
+	.consultation__men{
+		width: 300px;
+	}
+	.consultation-wrapp{
+		padding-right: 0;
+	}
+	.consultation__item{
+		width: 405px;
+	}
+	.consultation__item .top-title{
+		margin-top: 45px;
+	}
+	.footer__design{
+		width: 120px;
+		line-height: 1.5;
+	}
+	.footer{
+		position: relative;
+	}
+	.footer__number{
+		position: absolute;
+		width: 200px;
+		z-index: 2;
+		left: 50%;
+		margin-left: -100px;
+	}
+}
+@media(min-width: 768px){
+	.visible-xs{
+		display: none !important;
+	}
+}
+@media(max-width: 767px){
+	.hidden-xs{
+		display: none !important;
+	}
+	.modal-object-dialog{
+		width: 90%;
+	}
+	.about__men{
+		position: relative;
+		bottom: 0;
+		margin-bottom: 15px;
+	}
+	.about__men:before{
+		content: "";
+    background: url(../images/quote.png) no-repeat;
+    width: 78px;
+    height: 60px;
+    display: block;
+    position: absolute;
+    z-index: 2;
+    left: 40px;
+    top: 40px;
+	}
+	.about__info:after{
+		content: none;
+	}
+	.camera{
+		left: 125px;
+    width: 300px;
+    float: none;
+    position: absolute;
+    left: auto;
+    right: -115px;
+	}
+	.bottom-block{
+		position: relative;
+	}
+	.top-title, 
+	.top__text{
+		position: relative;
+		z-index: 2;
+		width: 295px;
+	}
+	.timer-wrapp{
+		display: block;
+		margin-bottom: 15px;
+	}
+	.top-slider{
+		height: 565px;
+	}
+	.timer{
+		margin-top: 25px;
+	}
+	.top-title__item{
+		font-size: 22px;
+		line-height: 1.4;
+	}
+	.top-title__price{
+		font-size: 22px;
+		height: 50px;
+		line-height: 50px;
+	}
+	.top-title{
+		margin-top: 15px;
+	}
+	.equipment__title{
+		font-size: 24px;
+		line-height: 1.4;
+	}
+	.equipment{
+		padding: 45px 0;
+	}
+	.equipment__item{
+		display: block;
+		float: left;
+		width: 50%;
+		margin-top: 35px;
+	}
+	.consultation__info:before{
+		font-size: 30px;
+		top: -10px;
+	}
+	.consultation__info{
+		padding-left: 15px;
+	}
+	.modal-title{
+		padding: 10px 0;
+	}
+	.rates__item{
+		width: 180px;
+		float: left;
+		margin-right: 20px;
+	}
+	.object-form .modal__submit{
+		float: none;
+		width: 100%;
+	}
+	.object-form .modal__input{
+		width: 100%;
+		float: none;
+		margin-right: 0;
+		margin-bottom: 15px;
+	}
+	.rates__item:last-child{
+		margin-right: 0;
+	}
+	.rates__list li,
+	.rates__text li{
+		height: 50px;
+		line-height: 1.2;
+	}
+	.rates{
+		padding-top: 40px;
+	}
+	.rates__name.large{
+		height: 111px;
+	}
+	.rates__item.large{
+		margin-top: 20px;
+	}
+	.rates__item.large .rates__content{
+		padding: 15px 0;
+	}
+	.objects{
+		padding-bottom: 90px;
+	}
+	.objects-wrapp{
+		padding-left: 25px;
+		padding-right: 25px;
+	}
+	.slide__btn{
+		top: 100px;
+	}
+	.price__img{
+		text-align: center;
+	}
+	.price__content{
+		width: 280px;
+	}
+	.item__title{
+		font-size: 24px;
+	}
+	.about__text{
+		width: 100%;
+		float: none;
+	}
+	.about__number{
+		padding-left: 0;
+	}
+	.about .container,
+	.gift .container,
+	.we-work .container
+	.review .container,
+	.footer .container,
+	.review .container,
+	.objects .container,
+	.price .container{
+		padding-left: 15px;
+		padding-right: 15px;
+	}
+	.about__info-item{
+		text-align: left;
+		font-size: 14px;
+		margin-bottom: 15px;
+	}
+	.price__input{
+		padding-left: 0;
+	}
+	.gift__item{
+		height: auto;
+	}
+	.why-we__text{
+		height: auto;
+	}
+	.gift-block{
+		margin-bottom: 15px;
+		padding-left: 0;
+		padding-right: 0;
+	}
+	.review-block{
+		padding: 0;
+		text-align: center;
+	}
+	.review__img{
+		position: relative;
+		margin: auto;
+		margin-bottom: 20px;
+	}
+	.review__item{
+		padding-left: 0;
+	}
+	.about__info{
+		padding-right: 0;
+	}
+	.about{
+		padding-bottom: 15px;
+	}
+	.why-we__item.left_block{
+		text-align: left;
+		padding-right: 0;
+		padding-left: 100px;
+	}
+	.why-we__item.left_block .why-we__img{
+		right: 0;
+		left: 0;
+	}
+	.why-we{
+		height: auto;
+		padding-bottom: 120px;
+	}
+	.gift-img{
+		width: 100%;
+		left: 0;
+		margin-left: 0;
+		text-align: center;
+		padding-left: 15px;
+		padding-right: 15px;
+	}
+	.gift{
+		padding-top: 140px;
+	}
+	.gift__form{
+		width: 280px;
+	}
+	.gift__form-block{
+		padding-left: 0;
+	}
+	.gift__form-content{
+		width: 100%;
+	}
+	.gift__form-title{
+		line-height: 1.4;
+		margin-bottom: 20px;
+	}
+	.we-work{
+		height: auto;
+		padding-top: 45px;
+	}
+	.right-arrow:after, 
+	.left-arrow:after{
+		content: none;
+	}
+	.we-work-block{
+		position: relative;
+	}
+	.we-work-block:after{
+		content: "";
+		background: url(../images/bottom-arrow-small.png)no-repeat;
+		width: 17px;
+		height: 61px;
+		display: block;
+		position: absolute;
+		z-index: 2;
+		left: 50%;
+		margin-left: -8.5px;
+		bottom: 15px;
+	}
+	.we-work-block.last-arrow:after{
+		content: none;
+	}
+	.we-work__desc{
+		height: auto;
+		padding-bottom: 90px;
+	}
+	.consultation__item{
+		position: relative;
+		z-index: 3;
+	}
+	.consultation-wrapp{
+		overflow: inherit;
+	}
+	.bottom-arrow:after{
+		content: none;
+	}
+	.consultation{
+		overflow: hidden;
+	}
+	.consultation__men{
+		left: -130px;
+	}
+	.consultation__item{
+		width: 295px;
+	}
+	.get-call__item{
+		float: none;
+	}
+	.timer__item{
+		float: none;
+	}
+	.consultation,
+	.consultation-wrapp{
+		height: 560px;
+	}
+	.adress{
+		width: 95%;
+		line-height: 1.5;
+		padding: 10px;
+		height: auto;
+	}
+	.footer__number{
+		position: relative;
+		width: auto;
+		left: 0;
+		margin-left: 0;
+		float: none;
+	}
+	.footer__right{
+		float: right;
 	}
 }

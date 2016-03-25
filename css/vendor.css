@@ -1136,6 +1136,37 @@ a{
 	right: 11px;
   top: -3px;
 }
+
+
+table th { font-weight: bold; }
+table td, table th { padding: 9px 10px; text-align: left; }
+
+/* Mobile */
+@media only screen and (max-width: 767px) {
+	
+	table.responsive { margin-bottom: 0; }
+	
+	.pinned { position: absolute; left: 0; top: 0; background: #fff; width: 230px; overflow: hidden;}
+	.pinned table { border-right: none; border-left: none; width: 100%; table-layout: fixed}
+	.pinned table th, .pinned table td { white-space: nowrap; }
+	.pinned td:last-child { border-bottom: 0; }
+	
+	div.table-wrapper { position: relative; margin-bottom: 20px; overflow: hidden; }
+	div.table-wrapper div.scrollable { margin-left: 230px; }
+	div.table-wrapper div.scrollable { overflow: scroll; overflow-y: hidden; }	
+	
+	table.responsive td, table.responsive th { position: relative; white-space: nowrap; overflow: hidden; }
+	table.responsive th:first-child, table.responsive td:first-child, table.responsive td:first-child, table.responsive.pinned td { display: none; }
+	
+	.scrollable table{
+		width: 500px;
+		table-layout: fixed;
+	}
+	.scrollable table td{
+		width: 150px;
+	}
+}
+
 @charset "UTF-8";
 
 .animated {
@@ -3865,4 +3896,76 @@ a{
 .rollOut {
   -webkit-animation-name: rollOut;
   animation-name: rollOut;
+}
+
+
+/* states and images */
+.ui-icon {
+	width: 16px;
+	height: 16px;
+}
+
+
+.ui-slider {
+	position: relative;
+	text-align: left;
+	padding-right: 63px;
+	border-top: 2px solid #fff;
+}
+.ui-slider .ui-slider-handle {
+	position: absolute;
+	z-index: 2;
+	-ms-touch-action: none;
+	touch-action: none;
+}
+.ui-slider .ui-slider-range {
+	position: absolute;
+	z-index: 1;
+	font-size: .7em;
+	display: block;
+	border: 0;
+	background-position: 0 0;
+}
+
+/* support: IE8 - See #6727 */
+.ui-slider.ui-state-disabled .ui-slider-handle,
+.ui-slider.ui-state-disabled .ui-slider-range {
+	filter: inherit;
+}
+
+.ui-slider-horizontal {
+	height: .8em;
+}
+.ui-slider-horizontal .ui-slider-handle {
+	top: -.3em;
+}
+.ui-slider-horizontal .ui-slider-range {
+	top: 0;
+	height: 100%;
+}
+.ui-slider-horizontal .ui-slider-range-min {
+	left: 0;
+}
+.ui-slider-horizontal .ui-slider-range-max {
+	right: 0;
+}
+
+.ui-slider-vertical {
+	width: .8em;
+	height: 100px;
+}
+.ui-slider-vertical .ui-slider-handle {
+	left: -.3em;
+	margin-left: 0;
+	margin-bottom: -.6em;
+}
+.ui-slider-vertical .ui-slider-range {
+	left: 0;
+	width: 100%;
+}
+.ui-slider-vertical .ui-slider-range-min {
+	bottom: 0;
+}
+.ui-slider-vertical .ui-slider-range-max {
+	top: 0;
 }

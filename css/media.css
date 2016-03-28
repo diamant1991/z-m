@@ -241,6 +241,9 @@
 	.modal-object-dialog{
 		width: 90%;
 	}
+	.map{
+		height: auto;
+	}
 	.about__men{
 		position: relative;
 		bottom: 0;
@@ -256,6 +259,13 @@
     z-index: 2;
     left: 40px;
     top: 40px;
+	}
+	.modal__close{
+		right: -5px;
+		top: -25px;
+	}
+	.contact{
+		top: 20px;
 	}
 	.about__info:after{
 		content: none;

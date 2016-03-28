@@ -1381,7 +1381,7 @@
 	</div>
 	<!-- consultation -->
 
-	<div class="map" id="map">
+	<div class="map hidden-xs" id="map">
 		<script type="text/javascript" charset="utf-8" src="https://api-maps.yandex.ru/services/constructor/1.0/js/?sid=GC6FwIIFtRJk14jxVzAR4HYSpRZQPSnR&width=100%&height=100%&lang=ru_UA&sourceType=constructor"></script>
 		<div class="contact">
 			<div class="container">
@@ -1393,6 +1393,19 @@
 		</div>
 	</div>
 	<!-- map -->
+
+	<div class="map visible-xs" id="map">
+		<img src="images/map.png" alt="">
+		<div class="contact">
+			<div class="container">
+				<div class="item__title black">Контакты</div>
+				<div class="adress">
+					г. Санкт-Петербург, ул. Лени Голикова, д. 35
+				</div>
+			</div>
+		</div>
+	</div>
+	<!-- map mobile-->
 
 	<footer class="footer">
 		<div class="container">
@@ -1432,6 +1445,9 @@
 <div class="modal fade" id="install" tabindex="-1" role="dialog">
   <div class="modal-dialog modal__install" role="document">
     <div class="modal-content">
+  		<a class="modal__close" data-dismiss="modal" aria-label="Close">
+    		<img src="images/close-menu.png" alt="">
+    	</a>
       <div class="modal-header">
         <h4 class="modal-title">Заявка на установку</h4>
       </div>
@@ -1462,6 +1478,9 @@
 <div class="modal fade" id="get-call" tabindex="-1" role="dialog">
   <div class="modal-dialog modal__install" role="document">
     <div class="modal-content">
+    	<a class="modal__close" data-dismiss="modal" aria-label="Close">
+    		<img src="images/close-menu.png" alt="">
+    	</a>
       <div class="modal-header">
         <h4 class="modal-title">Обратный звонок</h4>
       </div>
@@ -1488,6 +1507,9 @@
 <div class="modal fade" id="thank" tabindex="-1" role="dialog">
   <div class="modal-dialog modal__install" role="document">
     <div class="modal-content">
+  		<a class="modal__close" data-dismiss="modal" aria-label="Close">
+    		<img src="images/close-menu.png" alt="">
+    	</a>
       <div class="modal-header">
         <h4 class="modal-title">Спасибо</h4>
       </div>
@@ -1504,12 +1526,15 @@
 <div class="modal fade" id="modal-object" tabindex="-1" role="dialog">
   <div class="modal-dialog modal-object-dialog" role="document">
     <div class="modal-content">
+  		<a class="modal__close" data-dismiss="modal" aria-label="Close">
+    		<img src="images/close-menu.png" alt="">
+    	</a>
       <div class="modal-header">
         <h4 class="modal-title">Коттедж</h4>
       </div>
       <div class="modal-body">
         <div class="modal__table">
-      		<table class="responsive">
+      		<table class="responsive hidden-xs">
       			<thead>
       				<tr>
       					<td>
@@ -1614,6 +1639,72 @@
       					<td>-</td>
       					<td>-</td>
       					<td>-</td>
+      				</tr>
+      			</tbody>
+      		</table>
+      		<table class="visible-xs">
+      			<thead>
+      				<tr>
+      					<td>
+      						Зоны контроля
+      					</td>
+      				</tr>
+      			</thead>
+      			<tbody>
+      				<tr>
+      					<td>
+      						Главный вход в коттедж
+      					</td>
+      				</tr>
+      				<tr>
+      					<td>
+      						Окна
+      					</td>
+      				</tr>
+      				<tr>
+      					<td>
+      						Другие двери коттеджа
+      					</td>
+      				</tr>
+      				<tr>
+      					<td>
+      						Забор
+      					</td>
+      				</tr>
+      				<tr>
+      					<td>
+      						Ворота
+      					</td>
+      				</tr>
+      				<tr>
+      					<td>
+      						Дополнительнфе помещения
+      					</td>
+      				</tr>
+      				<tr>
+      					<td>
+      						Общая территория
+      					</td>
+      				</tr>
+      				<tr>
+      					<td>
+      						Котельная
+      					</td>
+      				</tr>
+      				<tr>
+      					<td>
+      						Коридор
+      					</td>
+      				</tr>
+      				<tr>
+      					<td>
+      						Кухня
+      					</td>
+      				</tr>
+      				<tr>
+      					<td>
+      						Гостинная
+      					</td>
       				</tr>
       			</tbody>
       		</table>

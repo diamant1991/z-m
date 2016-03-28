@@ -888,6 +888,16 @@ span.red {
   -webkit-overflow-scrolling: touch;
   outline: 0;
 }
+.modal__close {
+  display: block;
+  position: absolute;
+  z-index: 2;
+  right: -35px;
+  top: 0;
+  cursor: pointer;
+  width: 27px;
+  height: 25px;
+}
 .modal__install {
   width: 315px;
   margin: 70px auto;

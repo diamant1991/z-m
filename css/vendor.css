@@ -3878,7 +3878,8 @@ a{
 .ui-slider {
 	position: relative;
 	text-align: left;
-	padding-right: 63px;
+	padding-right: 63px !important;
+	width: 280px !important;
 	border-top: 2px solid #fff;
 }
 .ui-slider .ui-slider-handle {

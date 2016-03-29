@@ -13,6 +13,7 @@
 	}
 	.rates__name{
 		background-size: contain;
+		height: 100px;
 	}
 	.rates__name.large{
 		background-size: contain;
@@ -48,9 +49,8 @@
 	.hidden-sm{
 		display: none !important;
 	}
-	.rates__name .block-vertical{
-		vertical-align: top;
-		padding-top: 10px;
+	.rates-wrapp .col-sm-4{
+		width: 33.3% !important;
 	}
 	.top-slider{
 		padding-top: 35px;
@@ -238,11 +238,24 @@
 	.hidden-xs{
 		display: none !important;
 	}
+	.rates{
+		height: 890px;
+	}
+	.rates .item__title{
+		margin-bottom: 20px;
+	}
 	.modal-object-dialog{
 		width: 90%;
 	}
+	.rates__text{
+		top: auto;
+		left: auto;
+	}
 	.map{
 		height: auto;
+	}
+	.scroll__item{
+		padding-left: 115px;
 	}
 	.about__men{
 		position: relative;
@@ -332,14 +345,11 @@
 	.modal-title{
 		padding: 10px 0;
 	}
-	.rates__item{
-		width: 180px;
-		float: left;
-	}
 	.object-form .modal__submit{
 		float: none;
 		width: 100%;
 	}
+
 	.object-form .modal__input{
 		width: 100%;
 		float: none;
@@ -358,10 +368,16 @@
 		padding-top: 40px;
 	}
 	.rates__name.large{
-		height: 111px;
+		height: 95px;
+	}
+	.rates__header.red{
+		height: 80px;
 	}
 	.rates__item.large{
 		margin-top: 20px;
+	}
+	.rates__name{
+		height: 95px;
 	}
 	.rates__item.large .rates__content{
 		padding: 15px 0;

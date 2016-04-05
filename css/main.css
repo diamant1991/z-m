@@ -931,6 +931,14 @@ span.red {
   width: 27px;
   height: 25px;
 }
+.modal__left-img {
+  float: left;
+}
+.modal__right-img {
+  float: left;
+  position: relative;
+  top: -1px;
+}
 .modal__install {
   width: 315px;
   margin: 70px auto;
@@ -990,7 +998,7 @@ span.red {
   text-align: left;
 }
 .modal-object-dialog {
-  width: 740px;
+  width: 765px;
   margin: 20px auto;
   position: relative;
 }
